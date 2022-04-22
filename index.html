@@ -4,43 +4,189 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <header class="header">
-      <div class="bcg-header">
-        <div class="nav-container">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            inventore atque dolorum sit veniam officia amet impedit, itaque
-            eveniet voluptatem magni eligendi tempore minima, illum aut ut
-            ducimus at deserunt doloribus repellat nobis a. Vel rerum placeat
-            reiciendis veritatis vero labore quam, beatae ipsa doloremque dicta
-            aspernatur mollitia. Sapiente soluta placeat vero necessitatibus
-            fugiat quam voluptates beatae tenetur autem, est ullam iste veniam
-            id vitae quod quibusdam illum sequi illo dolor nemo ipsam hic
-            possimus. Repellendus ipsa quae reprehenderit! Numquam officia
-            voluptas molestiae nesciunt nostrum nam voluptatibus, sunt commodi
-            quod quos, atque ea debitis rerum, soluta pariatur consectetur hic?
-            Nesciunt, maiores? Nulla totam quia minima quaerat distinctio nam
-            saepe nostrum quo, animi incidunt pariatur. Cum sint minus odio,
-            quas esse aliquam. A accusamus ad in doloremque consectetur quisquam
-            non aliquid sed similique numquam eaque consequuntur sit veritatis
-            perspiciatis labore quae veniam, voluptatum cumque quas architecto
-            deleniti illo temporibus. Voluptates minima, autem saepe inventore
-            esse consectetur modi molestiae ipsum sed unde aut, totam, atque
-            distinctio animi suscipit veniam incidunt. Fuga optio ratione ex
-            quos iusto soluta! Consequuntur earumasdasdsad exercitationem
-            eveniet, similique laudantium, modi dolor recusandae officiis harum
-          </p>
+    <!-- Header -->
+
+    <header class="page-header">
+      <div class="bcg-thumb">
+        <div class="container">
+          <nav class="main-nav">
+            <ul class="site-nav">
+              <li>
+                <a href="./index.html">
+                  <img
+                    src="./images/shkeeper-logo.svg"
+                    alt="Shkeeper logo"
+                    width="220"
+                  />
+                </a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Integrations </a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Tariffs</a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">FAQ </a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Docs</a>
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Contact us</a>
+              </li>
+              <li>
+                <a class="primary-button" href="#">GitHub</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
       <div class="dots-wrapper">
         <div class="dots">
-          <div class="gradient"></div>
+          <!-- <div class="dots--gradient"></div> -->
         </div>
       </div>
     </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero__section">
+      <div class="container">
+        <h1 class="hero__title">
+          Start Accepting Crypto Payments<br />
+          With 0% Fees & No Third-party
+        </h1>
+
+        <div class="hero__box">
+          <div>
+            <p class="hero__text">
+              SHKeeper - a self-hosted keeper, an open-source cryptocurrency
+              payment processor. Our solution combines gateway and merchant.
+              That is to say, we are more than happy to integrate it or even
+              create brand new crypto for you
+            </p>
+            <a
+              class="primary-button primary-button--big primary-button--mr"
+              href="#"
+              >Learn more</a
+            >
+            <a class="primary-button primary-button--big" href="#">Get</a>
+          </div>
+          <img
+            class="hero__image"
+            src="./images/screenshots.png"
+            alt="Screenshots"
+          />
+        </div>
+
+        <div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__thumb">
+                <img src="./images/advantages-1.png" alt="" />
+              </div>
+
+              <p class="advantages__text">
+                Numerous cryptocurrencies available
+              </p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__thumb">
+                <img src="./images/advantages-2.png" alt="" />
+              </div>
+              <p class="advantages__text">Free</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__thumb">
+                <img src="./images/advantages-3.png" alt="" />
+              </div>
+              <p class="advantages__text">Highly secure</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__thumb">
+                <img src="./images/advantages-4.png" alt="" />
+              </div>
+              <p class="advantages__text">Private<br />and confidential</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simply Process  -->
+
+    <section class="process__section">
+      <div class="dots__wrapper">
+        <div class="dots process__dots">
+          <div class="dots--gradient process__dots--gradient"></div>
+        </div>
+      </div>
+
+      <div class="bcg-thumb bcg-thumb--process">
+        <div class="container">
+          <div class="process__container">
+            <h2 class="process__title">Simply Process</h2>
+            <div class="skew-container">
+              <div class="process__dots--box">
+                <div class="process__dots--white"></div>
+              </div>
+
+              <ul class="process__list">
+                <li class="process__item">
+                  <span class="process__index">1</span>
+                  <h2 class="process__subtitle">
+                    Install and Launch Your SHKeepper
+                  </h2>
+                  <p class="process__description">
+                    Basically, you need to install it into Kubernetes, Doker, or
+                    cloud. Raise all needed cryptocurrency demons at your
+                    convenience
+                  </p>
+                </li>
+                <li class="process__item">
+                  <span class="process__index">2</span>
+                  <h2 class="process__subtitle">
+                    SHKeepper Discovers Different Wallets
+                  </h2>
+                  <p class="process__description">
+                    SHKeepper automatically detects all of your crypto wallets.
+                    It can make payments to a crypto stock
+                  </p>
+                </li>
+                <li class="process__item">
+                  <span class="process__index">3</span>
+                  <h2 class="process__subtitle">
+                    Accept and Make Payments w/ SHKeepper
+                  </h2>
+                  <p class="process__description">
+                    The pleasure and convenience are truly yours
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="unskew-container">
+          <a class="primary-button primary-button--big process__button" href="#"
+            >Learn more</a
+          >
+        </div>
+      </div>
+    </section>
   </body>
 </html>

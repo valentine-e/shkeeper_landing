@@ -1,0 +1,49 @@
+.dots-wrapper {
+  padding: 0 5px;
+}
+
+.dots {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  /* opacity: 0.5; */
+
+  transform: rotate(-5.55deg);
+  transform-origin: top left;
+  border-bottom: 10px dotted var(--primary-text-color);
+}
+
+.dots--gradient {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--secondary-background-color)
+  );
+  height: 10px;
+}
+
+.primary-button {
+  color: var(--primary-background-color);
+  background-color: var(--primary-text-color);
+  text-transform: none;
+  padding: 12px 36px;
+  border-radius: 50px;
+
+  transition: color var(--timing-function),
+    background-color var(--timing-function);
+}
+
+.primary-button:hover {
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+}
+
+.skew-container {
+  transform: skew(0deg, -5.55deg);
+}
+
+.unskew-container {
+  transform: skew(0deg, 5.55deg);
+}
