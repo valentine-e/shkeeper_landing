@@ -1,0 +1,52 @@
+.try__dots {
+  transform-origin: top left;
+  top: -30px;
+  bottom: auto;
+  border-bottom: 15px dotted var(--primary-text-color);
+}
+
+.try__section {
+  position: relative;
+}
+
+.try__background {
+  padding: 5% 0 calc(5% + 30px);
+  background-color: var(--secondary-background-color);
+  transform-origin: top left;
+}
+
+.try__title {
+  margin-bottom: 30px;
+}
+
+.try__description {
+  text-align: center;
+  color: var(--primary-text-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.try__box {
+  display: flex;
+  justify-content: center;
+}
+
+.try__button--mr {
+  margin-right: 60px;
+}
+
+.try__dots--bottom {
+  bottom: 20px;
+}
+
+.plugins__dots--gradient-grey {
+  margin-top: -2px;
+  height: 20px;
+  background: linear-gradient(
+    to right,
+    var(--secondary-background-color) 25%,
+    transparent
+  );
+}

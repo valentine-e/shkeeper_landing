@@ -1,0 +1,69 @@
+.section-subtitle--m0 {
+  margin: 0;
+}
+
+.faq__section {
+  padding: 60px 0;
+}
+
+.faq__subtitle {
+  color: var(--primary-text-color);
+}
+
+.accordion-item hr {
+  border: 1px solid var(--primary-text-color);
+}
+
+.accordion-item {
+  padding-left: 30px;
+}
+
+.accordion-link {
+  padding: 15px 0;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  position: relative;
+
+  width: 100%;
+
+  transition: transform var(--timing-function);
+
+  &:hover {
+    transform: translateX(10px);
+  }
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+
+  transition: max-height var(--timing-function);
+}
+
+.accordion-item:target .answer {
+  max-height: 15rem;
+}
+
+.accordion-item:target .accordion-link {
+  transform: none;
+}
+
+.accordion-item:target h3 {
+  color: var(--accent-color);
+}
+
+.accordion-item:target .accordion-arrow {
+  fill: var(--accent-color);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.accordion-arrow {
+  fill: var(--primary-text-color);
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+
+  transition: fill var(--timing-function), transform var(--timing-function);
+}

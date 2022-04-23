@@ -16,7 +16,8 @@
 }
 
 .process__dots--gradient {
-  height: 13px;
+  margin-top: -3px;
+  height: 20px;
   background: linear-gradient(
     to right,
     var(--primary-background-color) 10%,
@@ -67,7 +68,7 @@
   position: absolute;
   top: 20px;
   border-bottom: 8px dotted var(--primary-text-color);
-  width: calc(100vw - 16%);
+  width: calc(100vw - 32%);
 }
 
 .process__subtitle {

@@ -1,0 +1,30 @@
+.skew-container--top {
+  margin-top: 60px;
+  transform-origin: top right;
+}
+
+.works__section {
+  background-color: var(--primary-background-color);
+  padding-top: calc(10% + 60px);
+  padding-bottom: calc(10% + 90px);
+}
+
+.work__title {
+  margin-bottom: 60px;
+}
+
+.works__video {
+  margin-bottom: 30px;
+}
+
+.works__description {
+  color: var(--primary-text-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.process__index {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-text-color);
+}

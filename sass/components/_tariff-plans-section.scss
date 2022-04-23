@@ -1,0 +1,112 @@
+.tariff__section {
+  padding: 60px 0 0;
+  position: relative;
+}
+
+.tariff__dots--blue {
+  top: auto;
+  bottom: -30px;
+  transform-origin: top right;
+  border-color: var(--accent-color);
+}
+
+.tariff__dots--gradient {
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-background-color)
+  );
+}
+
+.tarif__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  transform-origin: top right;
+}
+
+.tariff__section-title {
+  margin-bottom: 0px;
+}
+
+.tariff__card {
+  background-color: var(--secondary-background-color);
+  width: calc(100% / 3);
+  border-radius: 32px;
+  color: var(--primary-text-color);
+  transition: color var(--timing-function),
+    background-color var(--timing-function);
+
+  &:hover {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
+  }
+
+  &:hover .tariff__dots {
+    border-bottom: 10px dotted var(--secondary-background-color);
+  }
+
+  &:hover .primary-button {
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+
+    &:hover {
+      box-shadow: 4px 4px 6px rgba(108, 117, 125, 0.5);
+    }
+  }
+}
+
+.tariff__card--padding {
+  box-sizing: border-box;
+  padding: 45px 0px 60px;
+
+  min-height: 400px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.tariff__subtitle {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  gap: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tariff__dots {
+  margin: 40px 0;
+  width: 100%;
+  border-bottom: 10px dotted var(--primary-text-color);
+  transition: border var(--timing-function);
+}
+
+.tariff__description {
+  color: inherit;
+  text-align: center;
+
+  font-weight: 600;
+  padding: 0 60px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.tariff__price {
+  color: inherit;
+  font-size: 20px;
+  line-height: 1.25;
+
+  text-align: center;
+}
+
+.tariff__card--bottom {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 30px;
+}
