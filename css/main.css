@@ -102,14 +102,6 @@ body {
   margin-bottom: 30px;
 }
 
-.main-text {
-  color: var(--primary-text-color);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  margin-bottom: 30px;
-}
-
 .page-header {
   position: relative;
 }
@@ -826,7 +818,7 @@ h1 {
   position: absolute;
   bottom: 0;
   background-color: var(--secondary-background-color);
-  height: 300px;
+  height: 350px;
   width: 100%;
 }
 
@@ -842,6 +834,13 @@ h1 {
 
 .footer__container {
   transform-origin: top left;
+  padding: 30px 60px 0;
+}
+
+.footer-nav__thumb {
+  align-items: center;
+  display: flex;
+  gap: 90px;
 }
 
 .footer__content {
@@ -874,5 +873,29 @@ h1 {
 
 .footer__social-icon:hover {
   fill: var(--accent-color);
+}
+
+.footer-nav__title {
+  margin-bottom: 30px;
+}
+
+.footer-nav__software {
+  width: 25%;
+}
+
+.footer-nav__recources {
+  width: 25%;
+}
+
+.main-text {
+  color: var(--primary-text-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+.footer-nav__link {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
