@@ -811,14 +811,15 @@ h1 {
 
 .footer {
   position: relative;
-  padding: 10% 0 10%;
+  padding: 10% 0 0;
+  overflow: hidden;
 }
 
 .footer__background--deco {
   position: absolute;
   bottom: 0;
   background-color: var(--secondary-background-color);
-  height: 350px;
+  height: 300px;
   width: 100%;
 }
 
