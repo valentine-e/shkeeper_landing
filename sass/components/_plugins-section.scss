@@ -1,0 +1,28 @@
+.plugins__section {
+  position: relative;
+}
+
+.plugins__dots {
+  transform-origin: top right;
+  top: -30px;
+  bottom: auto;
+  border-bottom: 15px dotted var(--accent-color);
+}
+
+.plugins__dots--gradient {
+  height: 15px;
+  background: linear-gradient(
+    to left,
+    var(--primary-background-color) 25%,
+    transparent
+  );
+}
+
+.plugins__background {
+  background-color: var(--secondary-background-color);
+  transform: skew(0deg, -5.55deg);
+  transform-origin: top right;
+  width: 100%;
+  padding: 5% 0;
+  padding-top: 30px;
+}
