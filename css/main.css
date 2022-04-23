@@ -283,7 +283,7 @@ body {
 }
 
 .use__section {
-  padding: calc(5% + 120px) 0 60px;
+  padding: calc(5% + 120px) 0 150px;
 }
 
 .use__title {
@@ -375,7 +375,7 @@ h1 {
 }
 
 .plugins__dots {
-  transform-origin: top right;
+  transform-origin: top left;
   top: -30px;
   bottom: auto;
   border-bottom: 15px dotted var(--accent-color);
@@ -386,12 +386,13 @@ h1 {
   background: linear-gradient(to left, var(--primary-background-color) 25%, transparent);
 }
 
+.plugins__container {
+  transform: skew(0deg, -5.55deg);
+  transform-origin: top left;
+}
+
 .plugins__background {
   background-color: var(--secondary-background-color);
-  transform: skew(0deg, -5.55deg);
-  transform-origin: top right;
-  width: 100%;
   padding: 5% 0;
-  padding-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */
