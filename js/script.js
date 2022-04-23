@@ -17,3 +17,11 @@ tabs.onclick = (e) => {
     element.classList.add("active");
   }
 };
+
+const accordionLinks = document.querySelectorAll(".accordion-link");
+
+accordionLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+});
