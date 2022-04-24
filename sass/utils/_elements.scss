@@ -35,6 +35,11 @@
     background-color var(--timing-function), box-shadow var(--timing-function);
 }
 
+.primary-button--big {
+  font-size: 18px;
+  padding: 18px 54px;
+}
+
 .primary-button:hover {
   color: var(--primary-text-color);
   background-color: var(--accent-color);
