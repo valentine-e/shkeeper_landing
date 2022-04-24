@@ -54,6 +54,9 @@
       box-shadow: 4px 4px 6px rgba(108, 117, 125, 0.5);
     }
   }
+
+  transition: transform var(--timing-function),
+    background-color var(--timing-function);
 }
 
 .tariff__card--padding {
@@ -109,4 +112,8 @@
   flex-flow: column;
   align-items: center;
   gap: 30px;
+}
+
+.tariff__card:hover {
+  transform: scale(1.03);
 }

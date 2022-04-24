@@ -558,6 +558,7 @@ h1 {
   border-radius: 32px;
   color: var(--primary-text-color);
   transition: color var(--timing-function), background-color var(--timing-function);
+  transition: transform var(--timing-function), background-color var(--timing-function);
 }
 
 .tariff__card:hover {
@@ -627,6 +628,10 @@ h1 {
   flex-flow: column;
   align-items: center;
   gap: 30px;
+}
+
+.tariff__card:hover {
+  transform: scale(1.03);
 }
 
 .skew-container--top {
