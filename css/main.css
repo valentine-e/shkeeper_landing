@@ -278,6 +278,7 @@ body {
   line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .process__description {
@@ -285,6 +286,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
+  text-align: center;
 }
 
 .process__button {
