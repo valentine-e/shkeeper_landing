@@ -82,7 +82,9 @@
               href="#"
               >Learn more</a
             >
-            <a class="primary-button primary-button--big" href="#">Get</a>
+            <a class="primary-button primary-button--big" href="#"
+              >Go to GitHub</a
+            >
           </div>
           <img
             class="hero__image"
@@ -231,9 +233,17 @@
                   dolore.
                 </p>
               </div>
-              <div>
+              <div class="use__image">
                 <img
-                  src="./images/use-1.svg"
+                  class="use__image-1"
+                  src="./images/use-1-1.svg"
+                  alt="wallet illustration"
+                  width="750px"
+                />
+
+                <img
+                  class="use-image-2"
+                  src="./images/use-1-2.svg"
                   alt="wallet illustration"
                   width="750px"
                 />
@@ -660,7 +670,12 @@
         <ul class="help__list">
           <li class="help__item">
             <div class="help__box">
-              <img width="130" src="./images/help-1.svg" alt="documentation" />
+              <img
+                class="help__illustration"
+                width="130"
+                src="./images/help-1.svg"
+                alt="documentation"
+              />
               <h3 class="help__subtitle">Documentation</h3>
               <p class="help__info">
                 Please exploit this user documentation that covers everything to
@@ -671,7 +686,12 @@
           </li>
           <li class="help__item">
             <div class="help__box">
-              <img width="130" src="./images/help-2.svg" alt="Assistant" />
+              <img
+                class="help__illustration"
+                width="130"
+                src="./images/help-2.svg"
+                alt="Assistant"
+              />
               <h3 class="help__subtitle">Ask a question</h3>
               <p class="help__info">
                 Didn't find the right answers to your questions? Do not hesitate
@@ -682,7 +702,12 @@
           </li>
           <li class="help__item">
             <div class="help__box">
-              <img width="130" src="./images/help-3.svg" alt="contribute" />
+              <img
+                class="help__illustration"
+                width="130"
+                src="./images/help-3.svg"
+                alt="contribute"
+              />
               <h3 class="help__subtitle">Contribute</h3>
               <p class="help__info">
                 In case you want to contribute, you can forward us a module for
@@ -693,7 +718,12 @@
           </li>
           <li class="help__item">
             <div class="help__box">
-              <img width="130" src="./images/help-4.svg" alt="GitHub logo" />
+              <img
+                class="help__illustration"
+                width="130"
+                src="./images/help-4.svg"
+                alt="GitHub logo"
+              />
               <h3 class="help__subtitle">GitHub</h3>
               <p class="help__info">
                 Having a technical question or want to help improve the code?
@@ -760,7 +790,7 @@
 
         <div class="accordion">
           <div class="accordion-item" id="question1">
-            <a class="accordion-link" href="#question1">
+            <button class="accordion-link" href="#question1">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 What is SHKeeper?
               </h3>
@@ -774,7 +804,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 Бесплатный процессор криптовалютных платежей с открытым исходным
@@ -792,7 +822,7 @@
           </div>
 
           <div class="accordion-item" id="question2">
-            <a class="accordion-link" href="#question2">
+            <button class="accordion-link" href="#question2">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 Who can use SHKeeper?
               </h3>
@@ -806,7 +836,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 Сервер SHKeeper — это многофункциональное программное
@@ -820,7 +850,7 @@
           </div>
 
           <div class="accordion-item" id="question3">
-            <a class="accordion-link" href="#question3">
+            <button class="accordion-link" href="#question3">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 How to install SHKeeper Server?
               </h3>
@@ -834,7 +864,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 Это зависит от того, какой из различных вариантов развертывания
@@ -845,7 +875,7 @@
           </div>
 
           <div class="accordion-item" id="question4">
-            <a class="accordion-link" href="#question4">
+            <button class="accordion-link" href="#question4">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 Do I need to have an online store to use SHKeeper Server?
               </h3>
@@ -859,7 +889,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 Вы можете запустить свой сервер SHKeeper и быть обработчиком
@@ -874,7 +904,7 @@
           </div>
 
           <div class="accordion-item" id="question5">
-            <a class="accordion-link" href="#question5">
+            <button class="accordion-link" href="#question5">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 How does SHKeeper create a new address for each invoice?
               </h3>
@@ -888,7 +918,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 SHKeeper Server помогает устранить проблему конфиденциальности
@@ -912,7 +942,7 @@
           </div>
 
           <div class="accordion-item" id="question6">
-            <a class="accordion-link" href="#question6">
+            <button class="accordion-link" href="#question6">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 What if I have a problem paying an invoice?
               </h3>
@@ -926,7 +956,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 Если у вас возникли проблемы с оплатой счета SHKeeper Server,
@@ -937,7 +967,7 @@
           </div>
 
           <div class="accordion-item" id="question7">
-            <a class="accordion-link" href="#question7">
+            <button class="accordion-link" href="#question7">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 What if I have a problem with a paid invoice?
               </h3>
@@ -951,7 +981,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 Чтобы запросить возврат у продавца, вы должны связаться с
@@ -974,7 +1004,7 @@
           </div>
 
           <div class="accordion-item" id="question8">
-            <a class="accordion-link" href="#question8">
+            <button class="accordion-link" href="#question8">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 How can I use the SHKeeper Server API?
               </h3>
@@ -988,7 +1018,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 The original BTCPay Server API is compatible for the most part
@@ -1010,7 +1040,7 @@
           </div>
 
           <div class="accordion-item" id="question9">
-            <a class="accordion-link" href="#question9">
+            <button class="accordion-link" href="#question9">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 How can I backup my SHKeeper Server?
               </h3>
@@ -1024,7 +1054,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">Вот тут непАнЯтнА</p>
             </div>
@@ -1032,7 +1062,7 @@
           </div>
 
           <div class="accordion-item" id="question10">
-            <a class="accordion-link" href="#question10">
+            <button class="accordion-link" href="#question10">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 How much does it cost to run the SHKeeper Server?
               </h3>
@@ -1046,7 +1076,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 BTCPay — это 100% бесплатное программное обеспечение с открытым
@@ -1067,7 +1097,7 @@
           </div>
 
           <div class="accordion-item" id="question11">
-            <a class="accordion-link" href="#question11">
+            <button class="accordion-link" href="#question11">
               <h3 class="section-subtitle faq__subtitle section-subtitle--m0">
                 What are the minimal requirements for SHKeeper?
               </h3>
@@ -1081,7 +1111,7 @@
                   d="M8.58457 2.55611C8.29165 2.84912 8.12709 3.24648 8.12709 3.6608C8.12709 4.07512 8.29165 4.47247 8.58457 4.76549L16.3189 12.4999L8.58457 20.2342C8.29995 20.5289 8.14246 20.9236 8.14602 21.3333C8.14958 21.743 8.3139 22.1349 8.6036 22.4246C8.8933 22.7143 9.2852 22.8786 9.69488 22.8822C10.1046 22.8857 10.4993 22.7282 10.7939 22.4436L19.633 13.6045C19.9259 13.3115 20.0905 12.9142 20.0905 12.4999C20.0905 12.0855 19.9259 11.6882 19.633 11.3952L10.7939 2.55611C10.5009 2.26319 10.1036 2.09863 9.68926 2.09863C9.27494 2.09863 8.87758 2.26319 8.58457 2.55611V2.55611Z"
                 />
               </svg>
-            </a>
+            </button>
             <div class="answer">
               <p class="main-text">
                 If you would like to run Bitcoin and Lightning Network nodes,
@@ -1188,18 +1218,18 @@
               <h3 class="section-subtitle footer-nav__title">Resources</h3>
 
               <ul>
-                <li>
+                <li class="footer-nav__item">
                   <a class="footer-nav__link main-text" href="#"
                     >Documentation
                   </a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                   <a class="footer-nav__link main-text" href="#">Support </a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                   <a class="footer-nav__link main-text" href="#">Contribute </a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                   <a class="footer-nav__link main-text" href="#">GitHub?</a>
                 </li>
               </ul>

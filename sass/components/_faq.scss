@@ -19,9 +19,12 @@
 }
 
 .accordion-link {
+  background-color: transparent;
+  border: none;
   padding: 15px 0;
   color: var(--primary-text-color);
-  text-decoration: none;
+  text-align: left;
+
   position: relative;
 
   width: 100%;
@@ -41,22 +44,22 @@
   transition: max-height var(--timing-function);
 }
 
-.accordion-item:target .answer {
-  max-height: 15rem;
-}
+// .accordion-item:target .answer {
+//   max-height: 15rem;
+// }
 
-.accordion-item:target .accordion-link {
-  transform: none;
-}
+// .accordion-item:target .accordion-link {
+//   transform: none;
+// }
 
-.accordion-item:target h3 {
-  color: var(--accent-color);
-}
+// .accordion-item:target h3 {
+//   color: var(--accent-color);
+// }
 
-.accordion-item:target .accordion-arrow {
-  fill: var(--accent-color);
-  transform: translateY(-50%) rotate(90deg);
-}
+// .accordion-item:target .accordion-arrow {
+//   fill: var(--accent-color);
+//   transform: translateY(-50%) rotate(90deg);
+// }
 
 .accordion-arrow {
   fill: var(--primary-text-color);
@@ -66,4 +69,25 @@
   transform: translateY(-50%);
 
   transition: fill var(--timing-function), transform var(--timing-function);
+}
+
+.accordion-link {
+  &:focus ~ .answer {
+    max-height: 15rem;
+  }
+
+  &:focus .accordion-link {
+    .accordion-link {
+      transform: none;
+    }
+  }
+
+  &:focus h3 {
+    color: var(--accent-color);
+  }
+
+  &:focus .accordion-arrow {
+    fill: var(--accent-color);
+    transform: translateY(-50%) rotate(90deg);
+  }
 }

@@ -356,6 +356,7 @@ h1 {
 }
 
 .use__content {
+  min-height: 450px;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -380,6 +381,27 @@ h1 {
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
+}
+
+.use__image {
+  position: relative;
+}
+
+.use-image-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.use-image-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform var(--timing-function);
+}
+
+.use__image:hover .use-image-2 {
+  transform: scale(1.03);
 }
 
 .plugins__section {
@@ -469,7 +491,7 @@ h1 {
 }
 
 .plugins__title {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -743,6 +765,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+.help__item:hover .help__illustration {
+  transform: scale(1.1);
+  transition: transform var(--timing-function);
+}
+
 .section-subtitle--m0 {
   margin: 0;
 }
@@ -764,9 +791,11 @@ h1 {
 }
 
 .accordion-link {
+  background-color: transparent;
+  border: none;
   padding: 15px 0;
   color: var(--primary-text-color);
-  text-decoration: none;
+  text-align: left;
   position: relative;
   width: 100%;
   transition: transform var(--timing-function);
@@ -783,23 +812,6 @@ h1 {
   transition: max-height var(--timing-function);
 }
 
-.accordion-item:target .answer {
-  max-height: 15rem;
-}
-
-.accordion-item:target .accordion-link {
-  transform: none;
-}
-
-.accordion-item:target h3 {
-  color: var(--accent-color);
-}
-
-.accordion-item:target .accordion-arrow {
-  fill: var(--accent-color);
-  transform: translateY(-50%) rotate(90deg);
-}
-
 .accordion-arrow {
   fill: var(--primary-text-color);
   position: absolute;
@@ -807,6 +819,23 @@ h1 {
   left: -40px;
   transform: translateY(-50%);
   transition: fill var(--timing-function), transform var(--timing-function);
+}
+
+.accordion-link:focus ~ .answer {
+  max-height: 15rem;
+}
+
+.accordion-link:focus .accordion-link .accordion-link {
+  transform: none;
+}
+
+.accordion-link:focus h3 {
+  color: var(--accent-color);
+}
+
+.accordion-link:focus .accordion-arrow {
+  fill: var(--accent-color);
+  transform: translateY(-50%) rotate(90deg);
 }
 
 .footer {
@@ -897,5 +926,10 @@ h1 {
 
 .footer-nav__link {
   margin-bottom: 10px;
+  transition: color var(--timing-function);
+}
+
+.footer-nav__link:hover {
+  color: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */

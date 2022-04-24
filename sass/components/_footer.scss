@@ -86,4 +86,10 @@
 
 .footer-nav__link {
   margin-bottom: 10px;
+
+  transition: color var(--timing-function);
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }

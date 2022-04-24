@@ -60,6 +60,7 @@ h1 {
 }
 
 .use__content {
+  min-height: 450px;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -84,4 +85,26 @@ h1 {
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
+}
+
+.use__image {
+  position: relative;
+}
+
+.use-image-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.use-image-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: transform var(--timing-function);
+}
+
+.use__image:hover .use-image-2 {
+  transform: scale(1.03);
 }
