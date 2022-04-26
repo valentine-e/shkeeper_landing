@@ -21,6 +21,7 @@ body {
   background-color: var(--primary-background-color);
   letter-spacing: 0.05em;
   overflow-x: hidden;
+  color: var(--primary-text-color);
 }
 
 .container {
@@ -62,10 +63,16 @@ body {
 }
 
 .primary-button {
+<<<<<<< HEAD
+  color: var(--primary-background-color);
+  background-color: var(--white-color);
+  text-transform: none;
+=======
   font-weight: 600;
   color: var(--white-color);
   background-color: var(--secondary-background-color);
   text-transform: uppercase;
+>>>>>>> 7401daf3d0aceebd237f7af374f471642a56cd20
   padding: 12px 36px;
   border-radius: 50px;
   transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
@@ -102,7 +109,6 @@ body {
 }
 
 .main-text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
   color: var(--primary-text-color);
@@ -110,7 +116,6 @@ body {
 
 .section-title {
   color: var(--accent-color);
-  font-weight: 600;
   font-size: 30px;
   line-height: 1.4;
   margin-bottom: 60px;
@@ -120,7 +125,6 @@ body {
 .section-subtitle {
   color: var(--accent-color);
   text-transform: uppercase;
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -270,7 +274,6 @@ body {
 .process__index {
   display: block;
   font-size: 24px;
-  font-weight: 600;
   background-color: var(--white-color);
   color: var(----secondary-background-color);
   width: 48px;
@@ -723,35 +726,34 @@ h1 {
   color: var(--primary-text-color);
 }
 
-.accordion-item hr {
-  border: 1px solid var(--primary-text-color);
-}
-
 .accordion-item {
-  padding-left: 30px;
-}
-
-.accordion-link {
-  background-color: transparent;
+  background: none;
   border: none;
-  padding: 15px 0;
-  color: var(--primary-text-color);
-  text-align: left;
-  position: relative;
-  width: 100%;
-  transition: transform var(--timing-function);
+  border-bottom: 1px solid var(--primary-text-color);
 }
 
-.accordion-link:hover {
-  transform: translateX(10px);
-  cursor: pointer;
+.accordion-button {
+  position: relative;
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: 30px;
+  line-height: 1.5;
 }
 
-.answer {
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  transition: max-height var(--timing-function);
+.accordion-button::after {
+  content: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+  color: var(--accent-color);
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) .accordion-arrow {
+  fill: var(--accent-color);
+  transform: translateY(-50%) rotate(90deg);
 }
 
 .accordion-arrow {
@@ -763,21 +765,14 @@ h1 {
   transition: fill var(--timing-function), transform var(--timing-function);
 }
 
-.accordion-link:focus ~ .answer {
-  max-height: 15rem;
+.accordion-body {
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
-.accordion-link:focus .accordion-link .accordion-link {
-  transform: none;
-}
-
-.accordion-link:focus h3 {
-  color: var(--accent-color);
-}
-
-.accordion-link:focus .accordion-arrow {
-  fill: var(--accent-color);
-  transform: translateY(-50%) rotate(90deg);
+.collapsing {
+  transition: height var(--timing-function);
 }
 
 .footer {
