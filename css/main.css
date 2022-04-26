@@ -852,7 +852,7 @@ h1 {
 }
 
 .form__container {
-  padding: 60px 0;
+  padding: 60px 0 0;
   display: flex;
 }
 
@@ -891,6 +891,7 @@ h1 {
   padding: 5% 0;
   border-radius: 32px;
   padding: 60px 60px;
+  margin-top: 30px;
 }
 
 .form__button {
@@ -1014,7 +1015,7 @@ h1 {
   fill: #1da1f2;
 }
 
-.footer__social-icon--flinkedin {
+.footer__social-icon--linkedin {
   fill: #0a66c2;
 }
 
