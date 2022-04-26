@@ -19,6 +19,8 @@
 }
 
 .footer__dots {
+  position: relative;
+  top: 20px;
   border-bottom: 10px dotted var(--primary-text-color);
 }
 
@@ -49,8 +51,12 @@
   display: flex;
 }
 
-.footer__social-item:not(:last-child) {
-  margin-right: 60px;
+.footer__social-item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 60px;
+  }
 }
 
 .footer__social-icon {

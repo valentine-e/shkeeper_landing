@@ -26,9 +26,10 @@
 
 .primary-button {
   font-weight: 600;
+  font-size: 16px;
   color: var(--white-color);
   background-color: var(--button-bcg-color);
-  text-transform: uppercase;
+  // text-transform: uppercase;
   padding: 12px 36px;
   border-radius: 50px;
 
@@ -53,7 +54,7 @@
 
   box-shadow: var(--buttons-box-shadow);
 
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .skew-container {

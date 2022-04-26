@@ -24,8 +24,9 @@
   margin-bottom: 90px;
 }
 
-.primary-button--mr {
-  margin-right: 60px;
+.hero__buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages__list {
