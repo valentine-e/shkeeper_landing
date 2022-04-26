@@ -21,7 +21,7 @@
 .tariff__container {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 45px;
   transform-origin: top right;
 }
 
@@ -40,6 +40,10 @@
 .tariff__card--white {
   background-color: var(--white-color);
   color: var(--secondary-text-color);
+
+  & .tariff__dots {
+    border-color: var(--secondary-background-color);
+  }
 }
 
 .tariff__card--padding {
