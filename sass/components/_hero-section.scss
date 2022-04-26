@@ -4,28 +4,27 @@
 
 .hero__title {
   color: var(--accent-color);
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 36px;
+  line-height: 1.5;
 
   margin: 0 0 90px;
 }
 
 .hero__box {
   display: flex;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
+}
+
+.hero__content {
+  margin-right: 90px;
 }
 
 .hero__text {
-  color: var(--primary-text-color);
-  font-size: 18px;
-  line-height: 1.5;
-
-  margin-bottom: 140px;
-  margin-right: 75px;
+  margin-bottom: 90px;
 }
 
 .primary-button--mr {
-  margin-right: 30px;
+  margin-right: 90px;
 }
 
 .advantages__list {
@@ -42,18 +41,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 
   // transition: transform var(--timing-function);
 }
 
 .advantages__text {
-  color: var(--primary-text-color);
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1.5;
-
   text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 0;
 }
 
 .advantages__item:hover > .advantages__thumb {

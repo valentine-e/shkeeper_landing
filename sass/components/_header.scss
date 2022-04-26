@@ -24,14 +24,15 @@
 
 .site-nav__link {
   padding: 20px;
-  color: var(--primary-text-color);
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1.5;
+  color: var(--white-color);
 
   transition: color var(--timing-function);
 }
 
 .site-nav__link:hover {
   color: var(--accent-color);
+}
+
+.section-subtitle--mb0 {
+  margin-bottom: 0;
 }

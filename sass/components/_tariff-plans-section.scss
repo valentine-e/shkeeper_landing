@@ -18,15 +18,11 @@
   );
 }
 
-.tarif__container {
+.tariff__container {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   transform-origin: top right;
-}
-
-.tariff__section-title {
-  margin-bottom: 0px;
 }
 
 .tariff__card {
@@ -37,26 +33,13 @@
   transition: color var(--timing-function),
     background-color var(--timing-function);
 
-  &:hover {
-    background-color: var(--primary-text-color);
-    color: var(--secondary-text-color);
-  }
-
-  &:hover .tariff__dots {
-    border-bottom: 10px dotted var(--secondary-background-color);
-  }
-
-  &:hover .primary-button {
-    background-color: var(--accent-color);
-    color: var(--primary-text-color);
-
-    &:hover {
-      box-shadow: 4px 4px 6px rgba(108, 117, 125, 0.5);
-    }
-  }
-
   transition: transform var(--timing-function),
     background-color var(--timing-function);
+}
+
+.tariff__card--white {
+  background-color: var(--white-color);
+  color: var(--secondary-text-color);
 }
 
 .tariff__card--padding {
@@ -72,14 +55,9 @@
 }
 
 .tariff__subtitle {
-  color: var(--accent-color);
-  font-weight: 600;
   font-size: 22px;
-  line-height: 1.5;
   gap: 30px;
-
   text-align: center;
-  text-transform: uppercase;
 }
 
 .tariff__dots {
@@ -93,10 +71,8 @@
   color: inherit;
   text-align: center;
 
-  font-weight: 600;
   padding: 0 60px;
-  font-size: 14px;
-  line-height: 1.25;
+  font-size: 16px;
 }
 
 .tariff__price {
@@ -116,4 +92,13 @@
 
 .tariff__card:hover {
   transform: scale(1.03);
+}
+
+.tariff__button--blue {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  &:hover {
+    box-shadow: 4px 4px 6px rgba(108, 117, 125, 0.5);
+  }
 }

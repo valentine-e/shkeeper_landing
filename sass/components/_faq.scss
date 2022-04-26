@@ -33,6 +33,7 @@
 
   &:hover {
     transform: translateX(10px);
+    cursor: pointer;
   }
 }
 
@@ -43,23 +44,6 @@
 
   transition: max-height var(--timing-function);
 }
-
-// .accordion-item:target .answer {
-//   max-height: 15rem;
-// }
-
-// .accordion-item:target .accordion-link {
-//   transform: none;
-// }
-
-// .accordion-item:target h3 {
-//   color: var(--accent-color);
-// }
-
-// .accordion-item:target .accordion-arrow {
-//   fill: var(--accent-color);
-//   transform: translateY(-50%) rotate(90deg);
-// }
 
 .accordion-arrow {
   fill: var(--primary-text-color);

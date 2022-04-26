@@ -31,7 +31,6 @@
 
 .process__title {
   margin-bottom: 60px;
-  margin-top: 30px;
 }
 
 .process__list {
@@ -49,8 +48,9 @@
 .process__index {
   display: block;
   font-size: 24px;
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
+  font-weight: 600;
+  background-color: var(--white-color);
+  color: var(----secondary-background-color);
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -72,20 +72,11 @@
 }
 
 .process__subtitle {
-  color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  text-transform: uppercase;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .process__description {
-  color: var(--primary-text-color);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: center;
 }
 

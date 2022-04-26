@@ -3,16 +3,11 @@
   padding-bottom: calc(10% + 60px);
 }
 
-.help__title {
-  margin-bottom: 30px;
+.help__info {
+  text-align: center;
 }
 
 .help__description {
-  color: var(--primary-text-color);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
   margin-bottom: 90px;
 }
 
@@ -39,21 +34,7 @@
 }
 
 .help__subtitle {
-  margin-top: 20px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--accent-color);
-  text-transform: uppercase;
-}
-
-.help__info {
-  color: var(--primary-text-color);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .help__item:hover .help__illustration {
