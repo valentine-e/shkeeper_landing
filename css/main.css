@@ -34,7 +34,7 @@ body {
   --accent-color: #22a6ff;
   --primary-background-color: #141d27;
   --secondary-background-color: #253141;
-  --primary-text-color: #adb5bd;
+  --primary-text-color: #e9ecef;
   --white-color: #fff;
   --primary-font: Montserrat, sans-serif;
   --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,17 +63,25 @@ body {
 
 .primary-button {
   font-weight: 600;
-  color: var(--primary-background-color);
-  background-color: var(--white-color);
-  text-transform: none;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  text-transform: uppercase;
   padding: 12px 36px;
   border-radius: 50px;
   transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
+}
+
+.primary-button:active {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 16px 16px rgba(0, 0, 0, 0.15), 8px 32px 32px rgba(0, 0, 0, 0.15);
 }
 
 .primary-button:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05) translateY(-0.5rem);
 }
 
 .primary-button--big {
@@ -111,6 +119,10 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.main-text--mb30 {
   margin-bottom: 30px;
 }
 
@@ -177,7 +189,7 @@ body {
 }
 
 .primary-button--mr {
-  margin-right: 90px;
+  margin-right: 60px;
 }
 
 .advantages__list {
@@ -302,7 +314,7 @@ body {
 }
 
 .use__description {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   margin-bottom: 60px;
@@ -508,7 +520,7 @@ h1 {
 .tariff__container {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 45px;
   transform-origin: top right;
 }
 
@@ -524,6 +536,10 @@ h1 {
 .tariff__card--white {
   background-color: var(--white-color);
   color: var(--secondary-text-color);
+}
+
+.tariff__card--white .tariff__dots {
+  border-color: var(--secondary-background-color);
 }
 
 .tariff__card--padding {
