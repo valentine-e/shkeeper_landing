@@ -31,7 +31,7 @@
 .footer-nav__thumb {
   align-items: center;
   display: flex;
-  gap: 90px;
+  gap: 60px;
 }
 
 .footer__content {
@@ -57,28 +57,28 @@
   display: block;
   width: 24px;
   height: 24px;
-  fill: var(--primary-text-color);
   transition: fill var(--timing-function);
 }
 
+.footer__social-icon--fb {
+  fill: #4267b2;
+}
+
+.footer__social-icon--twitter {
+  fill: #1da1f2;
+}
+
+.footer__social-icon--flinkedin {
+  fill: #0a66c2;
+}
+
 .footer__social-icon:hover {
-  fill: var(--accent-color);
-}
-
-.footer-nav__title {
-  margin-bottom: 30px;
-}
-
-.footer-nav__software {
-  width: 25%;
-}
-
-.footer-nav__recources {
-  width: 25%;
+  fill: var(--white-color);
 }
 
 .footer-nav__link {
   margin-bottom: 10px;
+  color: var(--primary-text-color);
 
   transition: color var(--timing-function);
 

@@ -39,7 +39,7 @@
 
 .tariff__card--white {
   background-color: var(--white-color);
-  color: var(--secondary-text-color);
+  color: var(--secondary-background-color);
 
   & .tariff__dots {
     border-color: var(--secondary-background-color);
@@ -101,8 +101,4 @@
 .tariff__button--blue {
   color: var(--white-color);
   background-color: var(--accent-color);
-
-  &:hover {
-    box-shadow: 4px 4px 6px rgba(108, 117, 125, 0.5);
-  }
 }
