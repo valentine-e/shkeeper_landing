@@ -82,14 +82,19 @@ h1 {
   left: 0;
 }
 
-.use-image-2 {
+.use__image-2 {
   position: absolute;
   top: 0;
   left: 0;
 
-  transition: transform var(--timing-function);
+  // transition: transform var(--timing-function);
 }
 
-.use__image:hover .use-image-2 {
-  transform: scale(1.03);
+.use__image:hover .use__image-2 {
+  animation: var(--image-animation-2);
+  // transform: scale(1.03);
+}
+
+.use__image:hover .use__image-1 {
+  animation: var(--image-animation-1);
 }
