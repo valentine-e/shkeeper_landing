@@ -25,7 +25,6 @@
 }
 
 .primary-button {
-  font-weight: 600;
   color: var(--primary-background-color);
   background-color: var(--white-color);
   text-transform: none;
@@ -55,7 +54,6 @@
 }
 
 .main-text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
   color: var(--primary-text-color);
@@ -63,7 +61,7 @@
 
 .section-title {
   color: var(--accent-color);
-  font-weight: 600;
+
   font-size: 30px;
   line-height: 1.4;
   margin-bottom: 60px;
@@ -73,7 +71,7 @@
 .section-subtitle {
   color: var(--accent-color);
   text-transform: uppercase;
-  font-weight: 600;
+
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
