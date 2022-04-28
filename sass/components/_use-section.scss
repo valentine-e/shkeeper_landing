@@ -51,10 +51,11 @@ h1 {
 
 .content {
   display: none;
-  padding: 30px 0 0;
+  padding: 0 0 30px;
 }
 
 .use__content {
+  min-height: 400px;
   display: flex;
   gap: 90px;
   justify-content: space-between;
@@ -96,6 +97,6 @@ h1 {
   // transform: scale(1.03);
 }
 
-.use__image:hover .use__image-1 {
-  animation: var(--image-animation-1);
-}
+// .use__image:hover .use__image-1 {
+//   animation: var(--image-animation-1);
+// }

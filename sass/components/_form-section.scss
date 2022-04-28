@@ -26,6 +26,7 @@
 }
 
 .form__banner {
+  width: 50%;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -50,7 +51,7 @@
 }
 
 .form__wrapper {
-  min-width: 50%;
+  width: 50%;
   transform: skew(0deg, -5.55deg);
   transform-origin: top left;
 }
@@ -64,6 +65,8 @@
 }
 
 .form__content {
+  justify-content: start;
+  flex-wrap: wrap;
   gap: 5px;
 }
 

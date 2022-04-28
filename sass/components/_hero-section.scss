@@ -5,19 +5,20 @@
 .hero__title {
   color: var(--accent-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1.5;
 
-  margin: 0 0 90px;
+  margin: 0 0 30px;
 }
 
 .hero__box {
+  align-items: center;
   display: flex;
   margin-bottom: 90px;
 }
 
 .hero__content {
-  margin-right: 90px;
+  margin-right: 60px;
 }
 
 .hero__text {
@@ -25,6 +26,7 @@
 }
 
 .hero__image {
+  filter: drop-shadow(25px 25px 15px rgba(0, 0, 0, 0.25));
   width: 50%;
 }
 

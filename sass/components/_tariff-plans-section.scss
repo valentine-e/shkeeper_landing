@@ -98,7 +98,9 @@
   transform: scale(1.03);
 }
 
-.tariff__button--blue {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+.tariff__button--accent {
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
 }

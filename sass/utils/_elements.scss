@@ -40,22 +40,23 @@
 
   box-shadow: var(--buttons-box-shadow);
 
+  &:hover {
+    color: var(--secondary-background-color);
+    background-color: #ebf7ff;
+
+    box-shadow: var(--buttons-box-shadow);
+
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    background-color: var(--primary-background-color);
+    color: var(--accent-color);
+  }
+
   &:active {
     box-shadow: var(--buttons-box-shadow);
   }
-
-  &--blue {
-    background-color: var(--accent-color);
-  }
-}
-
-.primary-button:hover {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-
-  box-shadow: var(--buttons-box-shadow);
-
-  transform: scale(1.05);
 }
 
 .primary-button--accent {
