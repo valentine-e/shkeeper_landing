@@ -5,7 +5,7 @@
 .form__dots {
   position: absolute;
   bottom: auto;
-  top: -60px;
+  top: -40px;
   transform-origin: top right;
 }
 
@@ -20,8 +20,9 @@
 }
 
 .form__container {
-  padding: 60px 0 0;
+  padding: 60px 30px 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .form__banner {
@@ -29,7 +30,6 @@
   flex-flow: column;
   justify-content: space-around;
   // padding: 100px 0;
-  width: 50%;
 }
 
 .form__title {

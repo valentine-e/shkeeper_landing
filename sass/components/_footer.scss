@@ -19,6 +19,7 @@
 }
 
 .footer__dots {
+  transform: rotate(-5.55deg);
   position: relative;
   top: 20px;
   border-bottom: 10px dotted var(--primary-text-color);
@@ -27,7 +28,7 @@
 .footer__container {
   transform-origin: top left;
 
-  padding: 30px 60px 0;
+  padding: 30px 60px;
 }
 
 .footer-nav__thumb {

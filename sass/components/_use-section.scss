@@ -1,5 +1,5 @@
 .use__section {
-  padding: calc(5% + 120px) 0 200px;
+  padding: calc(5% + 90px) 0 120px;
 }
 
 .use__title {
@@ -21,10 +21,12 @@ h1 {
 
 .buttonWrapper {
   display: flex;
+  gap: 30px;
   justify-content: space-between;
 }
 
 .tab-button {
+  white-space: nowrap;
   border: none;
   box-sizing: border-box;
   background-color: var(--primary-background-color);
@@ -35,10 +37,6 @@ h1 {
   transition: color var(--timing-function), border var(--timing-function);
 
   cursor: pointer;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .tab-button:hover {

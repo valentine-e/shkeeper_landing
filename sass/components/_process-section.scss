@@ -5,7 +5,7 @@
 
 .bcg-thumb--process {
   transform-origin: top right;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .process__dots {
@@ -35,8 +35,7 @@
 
 .process__list {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
 }
 
 .process__item {
@@ -66,10 +65,23 @@
 }
 
 .process__dots--white {
-  position: absolute;
-  top: 20px;
+  transform: rotate(-5.55deg);
+  position: relative;
+  top: 26px;
   border-bottom: 8px dotted var(--primary-text-color);
-  width: calc(100vw - 32%);
+}
+
+.process__dots-gradient {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--secondary-background-color) 16%,
+    transparent 16%,
+    transparent 84%,
+    var(--secondary-background-color) 84%
+  );
 }
 
 .process__subtitle {
@@ -85,8 +97,8 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 300%);
+  transform: translate(-50%, 170%);
   &:hover {
-    transform: translate(-50%, 300%) scale(1.1);
+    transform: translate(-50%, 170%) scale(1.1);
   }
 }
