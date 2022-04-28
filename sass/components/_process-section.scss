@@ -46,13 +46,13 @@
 
 .process__index {
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
 
   background-color: var(--white-color);
   color: var(--secondary-background-color);
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@
 .process__dots--white {
   transform: rotate(-5.55deg);
   position: relative;
-  top: 26px;
+  top: 24px;
   border-bottom: 8px dotted var(--primary-text-color);
 }
 
