@@ -286,7 +286,7 @@ body {
 
 .bcg-thumb--process {
   transform-origin: top right;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 }
 
 .process__dots {
@@ -368,11 +368,11 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 170%);
+  transform: translate(-50%, 235%);
 }
 
 .process__button:hover {
-  transform: translate(-50%, 170%) scale(1.1);
+  transform: translate(-50%, 235%) scale(1.1);
 }
 
 .use__section {
