@@ -32,6 +32,7 @@
   // text-transform: uppercase;
   padding: 12px 36px;
   border-radius: 50px;
+  white-space: nowrap;
 
   transition: color var(--timing-function),
     background-color var(--timing-function), box-shadow var(--timing-function),
@@ -55,6 +56,11 @@
   box-shadow: var(--buttons-box-shadow);
 
   transform: scale(1.05);
+}
+
+.primary-button--accent {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 .skew-container {

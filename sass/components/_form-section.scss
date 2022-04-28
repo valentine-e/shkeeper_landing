@@ -28,7 +28,7 @@
 .form__banner {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: center;
   // padding: 100px 0;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .form__wrapper {
-  width: 50%;
+  min-width: 50%;
   transform: skew(0deg, -5.55deg);
   transform-origin: top left;
 }
@@ -63,9 +63,14 @@
   margin-top: 30px;
 }
 
+.form__content {
+  gap: 5px;
+}
+
 .form__button {
   background-color: var(--button-bcg-color);
   color: var(--primary-text-color);
+  white-space: nowrap;
 
   &:hover {
     color: var(--primary-text-color);

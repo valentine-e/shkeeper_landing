@@ -32,7 +32,6 @@
 }
 
 .footer-nav__thumb {
-  align-items: center;
   display: flex;
   gap: 60px;
 }
@@ -84,6 +83,7 @@
 }
 
 .footer-nav__link {
+  white-space: nowrap;
   margin-bottom: 10px;
   color: var(--primary-text-color);
 
