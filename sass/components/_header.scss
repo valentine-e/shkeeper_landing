@@ -37,3 +37,33 @@
 .section-subtitle--mb0 {
   margin-bottom: 0;
 }
+
+@media screen and (min-width: 1024px) {
+  .header__logo--mobile {
+    display: none;
+  }
+
+  .header__logo--desk {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header__desk--mobile {
+    display: block;
+  }
+
+  .header__logo--desk {
+    display: none;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--secondary-background-color);
+    padding: 45px 30px;
+    z-index: 10;
+  }
+}
