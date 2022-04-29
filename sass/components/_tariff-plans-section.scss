@@ -64,6 +64,10 @@
   text-align: center;
 }
 
+.tariff__subtitle--lh {
+  line-height: 3;
+}
+
 .tariff__dots {
   margin: 40px 0;
   width: 100%;
@@ -102,5 +106,15 @@
   &:hover {
     color: var(--white-color);
     background-color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .tariff__container {
+    gap: 20px;
+  }
+
+  .tariff__subtitle--lh {
+    line-height: 1.5;
   }
 }

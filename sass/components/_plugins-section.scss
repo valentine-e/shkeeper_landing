@@ -56,10 +56,6 @@
   border-radius: 100px;
   transition: transform var(--timing-function);
 
-  &:not(:last-child) {
-    margin-right: 60px;
-  }
-
   &:hover {
     transform: scale(1.1) skew(0deg, 5.55deg);
   }
@@ -86,6 +82,7 @@
   display: flex;
   justify-content: center;
   width: 50%;
+  gap: 60px;
 }
 
 .plugins__box {
@@ -108,4 +105,46 @@
   justify-content: center;
   gap: 50px;
   width: 50%;
+}
+
+@media screen and (max-width: 1023px) {
+  .plugins__background {
+    padding: 60px 30px;
+  }
+
+  .plugins__container {
+    padding: 0 60px;
+  }
+
+  .plugins__box {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .logo__thumb {
+    gap: 30px;
+  }
+
+  .plugins__logo-thumb {
+    width: 100px;
+    height: 100px;
+
+    & img {
+      width: 60px;
+    }
+  }
+
+  .plugins__logo-thumb--small {
+    width: 60px;
+    height: 60px;
+
+    & img {
+      width: 40px;
+    }
+  }
+
+  .logo__thumb--custom {
+    gap: 30px;
+  }
 }

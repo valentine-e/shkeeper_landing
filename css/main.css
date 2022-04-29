@@ -303,10 +303,7 @@ body {
   align-items: center;
   display: flex;
   margin-bottom: 90px;
-}
-
-.hero__content {
-  margin-right: 60px;
+  gap: 60px;
 }
 
 .hero__text {
@@ -349,6 +346,22 @@ body {
 .advantages__item:hover > .advantages__thumb {
   transform: scale(1.1);
   transition: transform var(--timing-function);
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__box {
+    flex-flow: column;
+    margin-bottom: 60px;
+  }
+  .hero__buttons {
+    justify-content: center;
+  }
+  .hero__text {
+    margin-bottom: 45px;
+  }
+  .hero__image {
+    width: 70%;
+  }
 }
 
 .process__section {
@@ -447,6 +460,12 @@ body {
   transform: translate(-50%, 235%) scale(1.1);
 }
 
+@media screen and (max-width: 1023px) {
+  .process__section {
+    margin-top: 60px;
+  }
+}
+
 .use__section {
   padding: calc(5% + 90px) 0 120px;
 }
@@ -541,6 +560,29 @@ h1 {
   animation: var(--image-animation-1);
 }
 
+@media screen and (min-width: 1024px) {
+  .use__accordion {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .use__description {
+    margin-bottom: 30px;
+  }
+  .buttonWrapper,
+  .contentWrapper {
+    display: none;
+  }
+  .use__section .section-subtitle {
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+  }
+  .use__accordion {
+    padding: 0 30px;
+  }
+}
+
 .plugins__section {
   position: relative;
   margin-bottom: 30px;
@@ -592,10 +634,6 @@ h1 {
   transition: transform var(--timing-function);
 }
 
-.plugins__logo-thumb:not(:last-child) {
-  margin-right: 60px;
-}
-
 .plugins__logo-thumb:hover {
   transform: scale(1.1) skew(0deg, 5.55deg);
 }
@@ -621,6 +659,7 @@ h1 {
   display: flex;
   justify-content: center;
   width: 50%;
+  gap: 60px;
 }
 
 .plugins__box {
@@ -643,6 +682,38 @@ h1 {
   justify-content: center;
   gap: 50px;
   width: 50%;
+}
+
+@media screen and (max-width: 1023px) {
+  .plugins__background {
+    padding: 60px 30px;
+  }
+  .plugins__container {
+    padding: 0 60px;
+  }
+  .plugins__box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .logo__thumb {
+    gap: 30px;
+  }
+  .plugins__logo-thumb {
+    width: 100px;
+    height: 100px;
+  }
+  .plugins__logo-thumb img {
+    width: 60px;
+  }
+  .plugins__logo-thumb--small {
+    width: 60px;
+    height: 60px;
+  }
+  .plugins__logo-thumb--small img {
+    width: 40px;
+  }
+  .logo__thumb--custom {
+    gap: 30px;
+  }
 }
 
 .tariff__section {
@@ -703,6 +774,10 @@ h1 {
   text-align: center;
 }
 
+.tariff__subtitle--lh {
+  line-height: 3;
+}
+
 .tariff__dots {
   margin: 40px 0;
   width: 100%;
@@ -738,6 +813,15 @@ h1 {
 .tariff__button--accent:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 1023px) {
+  .tariff__container {
+    gap: 20px;
+  }
+  .tariff__subtitle--lh {
+    line-height: 1.5;
+  }
 }
 
 .skew-container--top {
@@ -850,6 +934,23 @@ h1 {
   transition: transform var(--timing-function);
 }
 
+@media screen and (max-width: 1023px) {
+  .help__section {
+    padding-bottom: calc(10% + 60px);
+  }
+  .help__description {
+    margin-bottom: 60px;
+  }
+  .help__list {
+    justify-content: center;
+    gap: 60px 30px;
+    flex-wrap: wrap;
+  }
+  .help__item {
+    width: calc((100% - 90px) / 2);
+  }
+}
+
 .section-subtitle--m0 {
   margin: 0;
 }
@@ -908,6 +1009,12 @@ h1 {
 
 .collapsing {
   transition: height var(--timing-function);
+}
+
+@media screen and (max-width: 1023px) {
+  .accordion {
+    padding: 0 30px;
+  }
 }
 
 .form__section {
@@ -1022,6 +1129,25 @@ h1 {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 1023px) {
+  .form__container {
+    display: block;
+  }
+  .form__banner {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .form__wrapper {
+    padding: 0 60px;
+    width: 100%;
+  }
+  .form__section .form__title {
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
 .footer {
   position: relative;
   padding: 10% 0 0;
@@ -1060,15 +1186,10 @@ h1 {
 }
 
 .footer__content {
+  flex-flow: column;
+  display: flex;
   width: 50%;
-}
-
-.footer__logo {
-  margin-bottom: 30px;
-}
-
-.footer__info {
-  margin-bottom: 30px;
+  gap: 30px 0;
 }
 
 .footer__social-list {
@@ -1116,5 +1237,23 @@ h1 {
 
 .footer-nav__link:hover {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-nav__thumb {
+    flex-flow: column-reverse;
+    justify-content: left;
+    text-align: center;
+    gap: 30px;
+  }
+  .footer__content {
+    width: 100%;
+  }
+  .footer__logo {
+    margin: 0 auto;
+  }
+  .footer__social-list {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

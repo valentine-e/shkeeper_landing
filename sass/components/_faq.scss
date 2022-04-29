@@ -58,3 +58,9 @@
 .collapsing {
   transition: height var(--timing-function);
 }
+
+@media screen and (max-width: 1023px) {
+  .accordion {
+    padding: 0 30px;
+  }
+}

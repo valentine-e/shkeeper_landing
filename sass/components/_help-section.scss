@@ -41,3 +41,23 @@
   transform: scale(1.1);
   transition: transform var(--timing-function);
 }
+
+@media screen and (max-width: 1023px) {
+  .help__section {
+    padding-bottom: calc(10% + 60px);
+  }
+
+  .help__description {
+    margin-bottom: 60px;
+  }
+
+  .help__list {
+    justify-content: center;
+    gap: 60px 30px;
+    flex-wrap: wrap;
+  }
+
+  .help__item {
+    width: calc((100% - 90px) / 2);
+  }
+}

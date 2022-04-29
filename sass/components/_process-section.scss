@@ -103,3 +103,9 @@
     transform: translate(-50%, 235%) scale(1.1);
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .process__section {
+    margin-top: 60px;
+  }
+}

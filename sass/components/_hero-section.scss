@@ -17,10 +17,7 @@
   align-items: center;
   display: flex;
   margin-bottom: 90px;
-}
-
-.hero__content {
-  margin-right: 60px;
+  gap: 60px;
 }
 
 .hero__text {
@@ -65,4 +62,23 @@
 .advantages__item:hover > .advantages__thumb {
   transform: scale(1.1);
   transition: transform var(--timing-function);
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__box {
+    flex-flow: column;
+    margin-bottom: 60px;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+
+  .hero__text {
+    margin-bottom: 45px;
+  }
+
+  .hero__image {
+    width: 70%;
+  }
 }
