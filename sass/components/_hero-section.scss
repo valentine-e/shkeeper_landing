@@ -82,3 +82,45 @@
     width: 70%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .hero__box {
+    gap: 45px;
+  }
+
+  .hero__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .hero__buttons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hero__image {
+    width: 100%;
+  }
+
+  .advantages__list {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .advantages__item {
+    width: calc(50% - 15px);
+  }
+
+  .advantages__thumb {
+    margin: 0 0 30px;
+    height: 120px;
+  }
+
+  .advantages__thumb img {
+    width: 110px;
+  }
+
+  .advantages__thumb--size img {
+    width: 140px;
+  }
+}

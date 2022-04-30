@@ -126,3 +126,22 @@ h1 {
     padding: 0 30px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .use__section {
+    padding: calc(5% + 60px) 0 120px;
+  }
+
+  .use__description {
+    text-align: left;
+  }
+  .use__wrapper {
+    padding: 0 0 0 30px;
+  }
+
+  .use__description {
+    font-size: 18px;
+
+    line-height: 1.25;
+  }
+}

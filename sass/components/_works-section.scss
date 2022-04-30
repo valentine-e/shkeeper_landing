@@ -24,3 +24,16 @@
     var(--primary-background-color) 84%
   );
 }
+
+@media screen and (max-width: 767px) {
+  .works__container {
+    padding: 30px;
+  }
+  .skew-container--top {
+    margin-top: 20px;
+  }
+
+  .skew-container--top {
+    gap: 30px;
+  }
+}

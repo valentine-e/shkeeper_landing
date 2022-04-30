@@ -42,6 +42,17 @@ body {
   margin: 0 auto;
 }
 
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
 :root {
   --accent-color: #22a6ff;
   --primary-background-color: #141d27;

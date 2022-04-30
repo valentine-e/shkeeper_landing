@@ -6,6 +6,10 @@
   padding: 30px 0 60px;
 }
 
+.faq__container {
+  padding-left: 45px;
+}
+
 .faq__subtitle {
   color: var(--primary-text-color);
 }
@@ -62,5 +66,10 @@
 @media screen and (max-width: 1023px) {
   .accordion {
     padding: 0 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .faq__container {
+    padding: 0 0 0 30px;
   }
 }

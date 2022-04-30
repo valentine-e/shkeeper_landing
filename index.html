@@ -49,9 +49,9 @@
           <nav class="main-nav">
             <a class="header__logo--mobile" href="./index.html">
               <img
+                class="header__logo--width"
                 src="./images/shkeeper-logo.svg"
                 alt="Shkeeper logo"
-                width="220"
               />
             </a>
 
@@ -62,6 +62,7 @@
               aria-controls="mobile-menu"
             >
               <svg
+                class="header__button--size"
                 width="35"
                 height="35"
                 preserveAspectRatio="xMidYMid meet"
@@ -194,7 +195,7 @@
         <div>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <div class="advantages__thumb">
+              <div class="advantages__thumb advantages__thumb--size">
                 <img
                   width="180"
                   src="./images/advantages-1.png"
@@ -203,7 +204,7 @@
               </div>
 
               <p class="section-subtitle advantages__text">
-                Numerous cryptocurrencies available
+                Numerous crypto currencies available
               </p>
             </li>
             <li class="advantages__item">
@@ -508,9 +509,9 @@
                 class="section-subtitle accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
+                data-bs-target="#collapseUseOne"
                 aria-expanded="true"
-                aria-controls="collapseOne"
+                aria-controls="collapseUseOne"
               >
                 <svg
                   class="accordion-arrow"
@@ -526,7 +527,7 @@
               </button>
             </h3>
             <div
-              id="collapseOne"
+              id="collapseUseOne"
               class="accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
@@ -548,9 +549,9 @@
                 class="section-subtitle accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
+                data-bs-target="#collapseUseTwo"
                 aria-expanded="true"
-                aria-controls="collapseTwo"
+                aria-controls="collapseUseTwo"
               >
                 <svg
                   class="accordion-arrow"
@@ -566,7 +567,7 @@
               </button>
             </h3>
             <div
-              id="collapseTwo"
+              id="collapseUseTwo"
               class="accordion-collapse collapse"
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
@@ -589,9 +590,9 @@
                 class="section-subtitle accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
+                data-bs-target="#collapseUseThree"
                 aria-expanded="true"
-                aria-controls="collapseThree"
+                aria-controls="collapseUseThree"
               >
                 <svg
                   class="accordion-arrow"
@@ -607,7 +608,7 @@
               </button>
             </h3>
             <div
-              id="collapseThree"
+              id="collapseUseThree"
               class="accordion-collapse collapse"
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
@@ -630,9 +631,9 @@
                 class="section-subtitle accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
+                data-bs-target="#collapseUseFour"
                 aria-expanded="true"
-                aria-controls="collapseFour"
+                aria-controls="collapseUseFour"
               >
                 <svg
                   class="accordion-arrow"
@@ -648,7 +649,7 @@
               </button>
             </h3>
             <div
-              id="collapseFour"
+              id="collapseUseFour"
               class="accordion-collapse collapse"
               aria-labelledby="headingFour"
               data-bs-parent="#accordionExample"
@@ -670,9 +671,9 @@
                 class="section-subtitle accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
+                data-bs-target="#collapseUseFive"
                 aria-expanded="true"
-                aria-controls="collapseFive"
+                aria-controls="collapseUseFive"
               >
                 <svg
                   class="accordion-arrow"
@@ -688,7 +689,7 @@
               </button>
             </h3>
             <div
-              id="collapseFive"
+              id="collapseUseFive"
               class="accordion-collapse collapse"
               aria-labelledby="headingFive"
               data-bs-parent="#accordionExample"
@@ -856,7 +857,7 @@
                   Administration <br />
                   & Support
                 </h3>
-                <div class="tariff__dots skew-container"></div>
+                <div class="tariff__dots"></div>
               </div>
               <p class="main-text tariff__description">
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -880,7 +881,7 @@
                 >
                   Free
                 </h3>
-                <div class="tariff__dots skew-container"></div>
+                <div class="tariff__dots"></div>
               </div>
               <p class="main-text tariff__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -909,7 +910,7 @@
                 >
                   Custom integration
                 </h3>
-                <div class="tariff__dots skew-container"></div>
+                <div class="tariff__dots"></div>
               </div>
               <p class="main-text tariff__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -1098,7 +1099,7 @@
 
     <!-- Why Should You Choose SHKeeper? -->
 
-    <section class="plugins__section">
+    <section class="plugins__section why__section">
       <div class="dots__wrapper">
         <div class="dots plugins__dots">
           <div class="dots--gradient plugins__dots--gradient"></div>
@@ -1108,7 +1109,9 @@
       <div class="plugins__container">
         <div class="container plugins__background">
           <div class="unskew-container">
-            <h2 class="section-title">Why Should You Choose SHKeeper?</h2>
+            <h2 class="section-title section-title--mb">
+              Why Should You Choose SHKeeper?
+            </h2>
 
             <h3 class="section-subtitle">It's free and open-source</h3>
             <p class="main-text main-text--mb30">
@@ -1145,7 +1148,7 @@
     <!-- FAQ -->
 
     <section class="faq__section">
-      <div class="container">
+      <div class="container faq__container">
         <h2 id="faq" class="section-title">FAQ</h2>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
@@ -1720,7 +1723,10 @@
           <div class="footer-nav__thumb">
             <div class="footer__content">
               <a class="footer__logo" href="#header"
-                ><img src="./images/shkeeper-logo.svg" alt="SHKeeper logo"
+                ><img
+                  class="footer__logo--width"
+                  src="./images/shkeeper-logo.svg"
+                  alt="SHKeeper logo"
               /></a>
               <p class="main-text footer__info">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

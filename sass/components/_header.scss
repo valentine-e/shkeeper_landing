@@ -70,10 +70,12 @@
 
   .header__desk--mobile {
     display: block;
+    width: 220px;
   }
 
   .header__logo--desk {
     display: none;
+    width: 220px;
   }
 
   .site-nav {
@@ -116,11 +118,31 @@
     }
   }
 
-  .header__button--open {
-  }
-
   .header__button--close {
     align-self: flex-end;
   }
+}
 
+@media screen and (max-width: 767px) {
+  .header__button--size {
+    width: 30px;
+    height: 30px;
+  }
+
+  .dots {
+    border-bottom: 7px dotted var(--primary-text-color);
+  }
+
+  .main-nav {
+    padding: 10px 0 15px;
+    align-items: center;
+  }
+
+  .header__logo--width {
+    width: 130px;
+  }
+
+  .site-nav {
+    padding: 30px;
+  }
 }

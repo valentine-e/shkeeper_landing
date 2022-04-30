@@ -98,6 +98,10 @@
     gap: 30px;
   }
 
+  .footer__info {
+    text-align: left;
+  }
+
   .footer__content {
     width: 100%;
   }
@@ -108,5 +112,11 @@
 
   .footer__social-list {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__logo--width {
+    width: 130px;
   }
 }

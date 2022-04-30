@@ -61,3 +61,25 @@
     width: calc((100% - 90px) / 2);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .help__item {
+    width: 100%;
+  }
+
+  .help__list {
+    gap: 60px 0;
+  }
+
+  .help__box {
+    gap: 20px;
+  }
+
+  .help__illustration {
+    width: 120px;
+  }
+
+  .help__description {
+    margin-bottom: 30px;
+  }
+}
