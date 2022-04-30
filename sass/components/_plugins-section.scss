@@ -88,6 +88,7 @@
 .plugins__box {
   display: flex;
   align-items: center;
+  gap: 30px;
 
   &:not(:last-child) {
     margin-bottom: 90px;
@@ -110,10 +111,6 @@
 @media screen and (max-width: 1023px) {
   .plugins__background {
     padding: 60px 30px;
-  }
-
-  .plugins__container {
-    padding: 0 60px;
   }
 
   .plugins__box {
@@ -150,10 +147,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .plugins__container {
-    padding: 0 30px;
-  }
-
   .plugins__background {
     display: flex;
     flex-direction: column;

@@ -35,6 +35,10 @@ body {
   color: var(--primary-text-color);
 }
 
+.site-wrapper {
+  overflow-x: hidden;
+}
+
 .container {
   box-sizing: border-box;
   max-width: 1200px;

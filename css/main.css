@@ -35,6 +35,10 @@ body {
   color: var(--primary-text-color);
 }
 
+.site-wrapper {
+  overflow-x: hidden;
+}
+
 .container {
   box-sizing: border-box;
   max-width: 1200px;
@@ -711,9 +715,6 @@ h1 {
   .use__description {
     text-align: left;
   }
-  .use__wrapper {
-    padding: 0 0 0 30px;
-  }
   .use__description {
     font-size: 18px;
     line-height: 1.25;
@@ -802,6 +803,7 @@ h1 {
 .plugins__box {
   display: flex;
   align-items: center;
+  gap: 30px;
 }
 
 .plugins__box:not(:last-child) {
@@ -824,9 +826,6 @@ h1 {
 @media screen and (max-width: 1023px) {
   .plugins__background {
     padding: 60px 30px;
-  }
-  .plugins__container {
-    padding: 0 60px;
   }
   .plugins__box:not(:last-child) {
     margin-bottom: 30px;
@@ -854,9 +853,6 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
-  .plugins__container {
-    padding: 0 30px;
-  }
   .plugins__background {
     display: flex;
     flex-direction: column;
@@ -1275,12 +1271,6 @@ h1 {
 
 @media screen and (max-width: 1023px) {
   .accordion {
-    padding: 0 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .faq__container {
     padding: 0 0 0 30px;
   }
 }
