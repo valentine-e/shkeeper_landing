@@ -615,6 +615,7 @@ h1 {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .tab-button {
@@ -798,6 +799,10 @@ h1 {
   justify-content: center;
   width: 50%;
   gap: 60px;
+}
+
+.plugins__logo-thumb--pl {
+  padding-left: 6px;
 }
 
 .plugins__box {
